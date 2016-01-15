@@ -9,8 +9,8 @@
   "main": "dist/server/index.js",
   "private": true,
   "scripts": {
-    "start-production": "NODE_ENV=production API_IP=52.33.191.248 API_PORT=8000 PORT=7000 node ./dist/server/index.js",
-    "start-developing": "NODE_ENV=developing API_IP=52.33.191.248 API_PORT=8000 PORT=7000 node ./dist/server/index.js",
+    "start-production": "NODE_ENV=production API_IP=localhost API_PORT=8080 PORT=8000 node ./build/server/index.js",
+    "start-developing": "gulp",
     "jscs": "jscs ."
   },
   "author": {
