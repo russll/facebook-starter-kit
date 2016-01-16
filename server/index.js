@@ -6,15 +6,6 @@ const port = isDeveloping ? 8080 : process.env.PORT;
 const address = process.env.DOCKER_HOST || process.env.APP_IP || 'localhost';
 const app = express();
 
-import graphQLHTTP from 'express-graphql';
-import { schema } from '../data/schema.js';
-
-app.use('/graphql', graphQLHTTP((request) => ({
-  graphiql: isDeveloping,
-  pretty: true,
-  schema: schema,
-})));
-
 app.use(express.static(__dirname + '/build/client'));
 
 app.get('*', function (req, res) {
