@@ -12,7 +12,8 @@
     "start-production": "NODE_ENV=production API_IP=localhost API_PORT=8080 PORT=8000 node ./build/server/index.js",
     "start-developing": "gulp",
     "start": "gulp",
-    "jscs": "jscs ."
+    "jscs": "jscs .",
+    "eslint": "eslint ."
   },
   "author": {
     "name": "russll",
