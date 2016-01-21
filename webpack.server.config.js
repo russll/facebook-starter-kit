@@ -1,7 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
+import path from 'path';
+import webpack from 'webpack';
 
-module.exports = {
+export default {
   entry: ['./server/graphql.js'],
   output: {
     path: path.join(__dirname, './build/server'),
