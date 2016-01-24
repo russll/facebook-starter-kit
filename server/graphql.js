@@ -15,7 +15,6 @@ app.use('/', graphQLHTTP((request) => ({
 
 app.listen(port, address, function (err) {
   if (err) {
-    // TODO : Add logging.
     return console.error(err);
   } else {
     console.info('Listening GraphQL on http://%s:%s in %s', address, port, isDeveloping ? 'developer mode' : 'production mode');
