@@ -1,6 +1,8 @@
 import path from 'path';
 import webpack from 'webpack';
-
+/*
+test
+ */
 export default {
   entry: ['./server/graphql.js'],
   output: {
